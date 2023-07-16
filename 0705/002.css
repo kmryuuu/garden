@@ -1,0 +1,42 @@
+/* 클래스 선택자 */
+
+.pr {
+    color: slateblue;
+}
+
+/* 아이디 선택자 */
+
+#title {
+    text-decoration: underline;
+}
+
+/* h2의 전체 p가 선택 */
+/* h2+p{
+    color: aqua;
+} */
+/* 클래스 pr의 바로 뒤 p만 선택 */
+.pr + p {
+    color: aqua;
+}
+
+
+/* 자식 선택자 */
+/* .sect2 > strong {
+    background-color: pink;
+} */
+
+/* 자손 선택자 */
+/* .sect2 strong {
+    background-color: yellow;
+} */
+
+/* 박스가 3개 생김 - 자식 선택이라 자손(strong)까지 선택 안됌 */
+.sect2 > * {
+    border: 2px solid red;
+}
+
+/* 박스가 4개 생김 - 전체 선택되서 자손(strong)까지 선택 */
+/* .sect2 * {
+    border: 2px solid blue;
+} */
+
