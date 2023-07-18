@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        header {
+            background-color: skyblue;
+            height: 100px;
+        }
+
+        section {
+            background-color: salmon;
+            float: left;
+            width: 80%;
+            height: 300px;
+        }
+
+        .clear-fix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        aside {
+            background-color: yellow;
+            width: 20%;
+            height: 300px;
+        }
+
+        footer {
+            background-color: purple;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>header</header>
+        <section>section > article</section>
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>
