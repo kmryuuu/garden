@@ -170,6 +170,9 @@ body {
 
 /* 우비 몸 */
 
+.duck-body {
+	margin-top: 50px;
+}
 .raincoat-body {
 	width: 235px;
 	height: 135px;
@@ -204,7 +207,6 @@ body {
 
 .foot {
 	position: relative;
-	/* background-color: red; */
 	width: 300px;
 	height: 100px;
 	margin: 0 auto;
