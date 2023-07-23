@@ -4,21 +4,61 @@
 		box-sizing: border-box;
 }
 
-body {
-	background-color: #eee;
+.rain-bg {
+	background: linear-gradient(#72838e, #c6c6c6);
+	width: 100%;
+	height: 100vh;
+
 }
 
+/* 비 */
+
+.rain{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+
+.rain::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/rain.png);
+    animation: rain 0.2s linear infinite;
+    -webkit-animation: rain 0.3s linear infinite;
+		z-index: 30;
+}
+
+@keyframes rain{
+    0%
+    {
+        background-position: 0 0;
+    }
+
+    100% 
+    {
+    	background-position: 20% 100%;
+    }
+}
+
+/* ------캐릭터------ */
+
 .duck {
-	margin: 50px auto;
 	width: 305px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .head {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-		position: relative;
+	position: relative;
 }
 
 
@@ -33,8 +73,8 @@ body {
 .head .raincoat-bottom {
 	width: 305px;
 	height: 183px;
-  border-radius: 100px;
-  background: #EE6213;
+  	border-radius: 100px;
+  	background: #EE6213;
 	margin-top: -140px;
 }
 
@@ -58,7 +98,7 @@ body {
 	top: 105px; 
 }
 
-/* 우비끈 */
+/* 우비 끈 */
 
 .face-bottom::before {
 	content: "";
