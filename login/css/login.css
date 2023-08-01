@@ -20,7 +20,7 @@ h2 {
 
 a {
   text-decoration: none;
-  /* color: inherit; */
+  color: inherit;
 }
 
 button {
@@ -32,6 +32,10 @@ button:enabled {
   cursor: pointer;
 }
 
+hr {
+  border: 0;
+}
+
 /* CSS */
 body {
   background-color: #eee;
@@ -39,19 +43,56 @@ body {
 }
 
 .wrapper {
-  background: #fff;
   width: 520px;
   height: 736px;
+  background-color: #fff;
   border: 1px solid #c4c4c4;
   border-radius: 10px;
+  position: relative;
+}
+.login-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 .login-top h1 {
+  margin: 20px 0 18px;
   font-size: 16px;
 }
 
+.login-top svg {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 24px;
+}
+
+.login-form {
+  padding: 0 24px;
+}
+
 .login-form h2 {
+  margin: 26px 0 24px;
   font-size: 20px;
+}
+
+[class^="user"] {
+  padding: 0 16px;
+  width: 472px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.user-id {
+  border: 2px solid #f4492e;
+}
+
+.user-pw {
+  border: 1px solid #c4c4c4;
 }
 
 .warning-id,
@@ -60,7 +101,57 @@ body {
   font-size: 14px;
 }
 
-.keep_check {
+.warning-id {
+  margin: 6px 0 10px;
+}
+
+.warning-pw {
+  margin: 10px 0 13px;
+}
+
+.keep-wrap {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 21px;
+}
+
+.keep-check {
   color: #767676;
   font-size: 16px;
+  font-weight: 500;
+}
+
+.btn-login {
+  width: 472px;
+  height: 50px;
+  background-color: #2f80ed;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.find-wrap {
+  margin: 20px 0 30px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  color: #767676;
+  font-size: 14px;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.or hr {
+  width: 210px;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+
+.or span {
+  margin: 0 13px;
 }
